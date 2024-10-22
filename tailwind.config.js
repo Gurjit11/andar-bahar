@@ -8,6 +8,10 @@ export default {
           700: "#5C4033", // Adjust to match the brown shade in your design
         },
       },
+      fontFamily: {
+        questrial: ["Questrial", "sans-serif"],
+        ramaraja: ["Ramaraja", "serif"],
+      },
     },
   },
   plugins: [],

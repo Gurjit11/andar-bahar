@@ -6,6 +6,7 @@ import stat from "./assets/stat.png";
 import a from "./assets/a.png";
 import b from "./assets/b.png";
 import screw from "./assets/screw.png";
+import sidelogo from "./assets/sidelogo.png";
 
 const GridPage = () => {
   return (
@@ -44,15 +45,22 @@ const Header = () => {
 
 const GameGrid = () => {
   return (
-    <div className="bg-red-600">
-      <div className="max-w-2xl  mx-auto">
-        <div className="grid grid-cols-8  p-10  rounded-b-lg">
+    <div className="bg-[#971909] relative">
+      <img
+        src={sidelogo}
+        alt="sidelogo"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 h-[80%] ml-[-30px]"
+      />
+      <img
+        src={sidelogo}
+        alt="sidelogo"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 h-[80%]"
+      />
+      <div className="max-w-2xl mx-auto">
+        <div className="grid grid-cols-8 p-10 rounded-b-lg">
           {[...Array(40)].map((_, index) => (
-            <div className="flex justify-center items-center py-2">
-              <div
-                key={index}
-                className="w-16 h-16 bg-red-800 rounded-full border-2 border-red-900 shadow-md"
-              ></div>
+            <div key={index} className="flex justify-center items-center py-2">
+              <div className="w-16 h-16 bg-[#741003] rounded-full border-2 border-red-900 shadow-md"></div>
             </div>
           ))}
         </div>

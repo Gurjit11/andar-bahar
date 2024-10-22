@@ -124,7 +124,7 @@ const AndarBaharButtons = () => {
         <div className="text-[#f3be39] mt-2 text-2xl font-semibold">Andar</div>
       </div>
       <div className="flex flex-col items-center">
-        <div className="w-16 h-20 overflow-clip">
+        <div className="w-16 h-20 pt-1 overflow-clip">
           <img src={b} alt="b" className="w-16 " />
         </div>
         <div className="text-[#f3be39] mt-2 text-2xl font-semibold">Bahar</div>
